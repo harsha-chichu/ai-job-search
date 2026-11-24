@@ -1,8 +1,8 @@
-%% Example CV - [YOUR_NAME]
+%% Example CV - Harshavardhan Sunnam
 %% Comprehensive overview of all competencies, experience, and achievements.
 %% Use as a master reference when tailoring role-specific CVs.
 %%
-%% SETUP: Run /setup to populate this with your actual information.
+%% Populated by /setup (Path A) on 2026-11-24.
 %% Compile with: lualatex main_example.tex
 %% (pdflatex often fails on modern MiKTeX with fontawesome5 font-expansion errors.)
 
@@ -40,7 +40,7 @@
     linkcolor=blue,
     filecolor=magenta,
     urlcolor=blue,
-    pdftitle={[YOUR_NAME] - CV},
+    pdftitle={Harshavardhan Sunnam - CV},
     % Keep pdfpagemode=UseNone: this block runs after moderncv's own
     % \AtEndPreamble (moderncv.cls sets pdfpagemode there), so a FullScreen
     % value here would win and open every CV in fullscreen presentation mode.
@@ -48,15 +48,14 @@
 }}
 \usepackage[scale=0.80]{geometry}
 \usepackage{import}
+\usepackage{needspace}
 
 % personal data
-\name{[First]}{[Last]}
-% If you have no address to list, DELETE this whole line. \address{}{}{} fails
-% with "There's no line here to end" on every moderncv version.
-\address{[Your Address, City, Country]}{}{}
-\phone[mobile]{[+XX XXXXXXXXXX]}
-\email{[your.email@example.com]}
-\extrainfo{\href{[https://linkedin.com/in/your-profile]}{LinkedIn}, \href{[https://github.com/your-username]}{GitHub}}
+\name{Harshavardhan}{Sunnam}
+\address{Bangalore, Karnataka, India}{}{}
+\phone[mobile]{+91 9392778046}
+\email{harshachinnu129@gmail.com}
+\extrainfo{\href{https://linkedin.com/in/harsha-vardhan12}{linkedin.com/in/harsha-vardhan12}, \href{https://github.com/harsha-chichu}{github.com/harsha-chichu}}
 
 \begin{document}
 
@@ -67,7 +66,7 @@
 % ============================================================
 
 \vspace{6pt}
-\small{[Write a 3-5 line profile statement tailored to the role you're applying for. Focus on what makes you uniquely qualified. Example: "Data scientist with a PhD in [field] and X years of industry experience. Combines deep domain expertise in [domain] with strong applied machine learning and Python development skills. Experienced in developing end-to-end ML pipelines, from data ingestion to stakeholder-facing dashboards."]}
+\small{AI Engineer and Team Lead shipping production LLM systems. At KrtrimaIQ I lead a team of 4 engineers delivering three document-AI services for an insurance client (LOB classification, ACORD form extraction, auto symbols extraction) built on GPT-4o, Gemini Vision, PyMuPDF and Camelot and deployed on Kubernetes. Architected SmartHire, a 6-agent LangGraph platform with AWS Bedrock Guardrails and Langfuse observability. B.Tech in Computer Science with a published deep-learning paper on medical image classification.}
 
 % ============================================================
 %     CORE COMPETENCIES
@@ -77,15 +76,17 @@
 \vspace{1pt}
 \begin{itemize}
 
-\item \textbf{[Skill Category 1]}: [Specific skills, frameworks, tools. Be concrete.]
+\item \textbf{Agentic AI \& LLM Engineering}: LangGraph, LangChain, DeepAgents, multi-agent orchestration, RAG, vector databases, GPT-4o, Gemini.
 
-\item \textbf{[Skill Category 2]}: [Specific skills, frameworks, tools.]
+\item \textbf{Document AI}: Structured extraction from dense forms (ACORD) with Gemini Vision, GPT-4o, PyMuPDF and Camelot; PageIndex-based retrieval and LOB classification.
 
-\item \textbf{[Skill Category 3]}: [Specific skills, frameworks, tools.]
+\item \textbf{LLM Safety \& Observability}: AWS Bedrock Guardrails, Bedrock Prompt Manager, Langfuse tracing and prompt-level monitoring.
 
-\item \textbf{[Skill Category 4]}: [Domain expertise, methods, approaches.]
+\item \textbf{Backend \& Deployment}: Python, FastAPI, SQL, Linux, Kubernetes microservices, AWS, Git.
 
-\item \textbf{[Skill Category 5]}: [Tools, platforms, software.]
+\item \textbf{Machine Learning}: PyTorch, CNNs, regression modeling, data pipelines, Pandas, Matplotlib.
+
+\item \textbf{Full-Stack}: Next.js, TailwindCSS, Supabase.
 
 \end{itemize}
 
@@ -97,34 +98,43 @@
 \vspace{3pt}
 \begin{itemize}
 
-% --- Most Recent Role ---
-\item{\cventry{[YYYY-Present]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\item{\cventry{Nov 2025 - Present}{AI Engineer, Team Lead (Client: Exdion)}{KrtrimaIQ}{Bangalore, India}{}{\vspace{1pt}
 \begin{itemize}
-    \item {[Achievement or responsibility 1 - be specific, use numbers where possible]}
-    \item {[Achievement or responsibility 2]}
-    \item {[Achievement or responsibility 3]}
-    \item {[Achievement or responsibility 4]}
+    \item Led a team of 4 engineers delivering three production AI document-processing services (LOB classification, ACORD insurance form extraction, auto symbols extraction), owning architecture, delivery and production stabilization.
+    \item Single-handedly designed and shipped the multi-stage LOB classification service using PageIndex-based retrieval and regex pattern matching.
+    \item Drove the majority of development on the LOB-triggered extraction pipeline, integrating Gemini Vision API and GPT-4o with PyMuPDF and Camelot to extract fields, symbols and tables from dense ACORD forms.
+    \item Deployed the multi-LLM microservices on Kubernetes, feeding structured outputs to an AI chatbot used by US-based insurance brokers.
+    \item Architected SmartHire, a LangGraph multi-agent hiring platform orchestrating 6 specialized LLM agents (JD generation, QnA, coding questions, shortlisting, interview evaluation, reporting).
+    \item Implemented AWS Bedrock Guardrails and Bedrock Prompt Manager for safety and version-controlled prompts, and Langfuse for end-to-end tracing and debugging.
 \end{itemize}}}
 
 \vspace{3pt}
 
-% --- Previous Role ---
-\item{\cventry{[YYYY-YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\item{\cventry{Dec 2024 - Present}{Freelance AI/ML Engineer (part-time)}{Private Client}{Hyderabad, India}{}{\vspace{1pt}
 \begin{itemize}
-    \item {[Achievement or responsibility 1]}
-    \item {[Achievement or responsibility 2]}
-    \item {[Achievement or responsibility 3]}
+    \item Built a full-stack portfolio and booking platform for an artist with Next.js, TailwindCSS and Supabase, handling 80+ bookings with real-time updates and an admin dashboard.
+    \item Developing a GenAI chatbot with LangChain, RAG and a vector database for natural-language queries.
 \end{itemize}}}
 
 \vspace{3pt}
 
-% --- Earlier Role ---
-\item{\cventry{[YYYY-YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\needspace{5\baselineskip}
+\item{\cventry{Mar 2023 - Nov 2023}{Research Intern, Nanoindentation Analysis Using AI/ML}{Academic Collaboration}{Hyderabad, India}{}{\vspace{1pt}
 \begin{itemize}
-    \item {[Achievement or responsibility 1]}
-    \item {[Achievement or responsibility 2]}
+    \item Applied machine learning to predict mechanical behavior from 80,000+ nanoindentation samples on laser-treated materials.
+    \item Built Python/PyTorch pipelines for cleaning, feature extraction and training, achieving over 85\% R\textsuperscript{2} in regression tasks.
 \end{itemize}}}
 
+\end{itemize}
+
+% ============================================================
+%     PROJECTS
+% ============================================================
+
+\section{Projects}
+\vspace{1pt}
+\begin{itemize}
+\item \textbf{Preppy} (Next.js, Supabase, LangGraph, Langfuse, FastAPI): voice-first AI interview-prep platform where LangGraph agents adapt follow-ups, score content and spoken delivery, and target weak areas with spaced repetition.
 \end{itemize}
 
 % ============================================================
@@ -135,15 +145,7 @@
 \vspace{1pt}
 \begin{itemize}
 
-\item{\cventry{[YYYY-YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-Thesis: ``[Thesis Title].'' [Brief description of research focus.]
-}}
-
-\vspace{3pt}
-
-\item{\cventry{[YYYY-YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-[Brief description or key topics.]
-}}
+\item{\cventry{2020 - 2024}{B.Tech in Computer Science}{Mahatma Gandhi Institute of Technology}{Hyderabad, India}{}{}}
 
 \end{itemize}
 
@@ -154,27 +156,29 @@ Thesis: ``[Thesis Title].'' [Brief description of research focus.]
 \section{Languages}
 \vspace{1pt}
 \begin{itemize}
-\item {[Language 1] (native), [Language 2] (fluent), [Language 3] (intermediate).}
+\item {English (fluent, professional working proficiency).}
 \end{itemize}
 
 % ============================================================
-%     PUBLICATIONS (optional)
+%     PUBLICATIONS
 % ============================================================
 
 \section{Publications}
 \vspace{1pt}
 \begin{itemize}
-\item {[Author(s)] ([Year]). [Title]. [Journal/Conference]. \href{[DOI_URL]}{DOI link}}
+\item {Sunnam, H. et al. (2025). Automated White Blood Cell Subtype Classification: A Robust Deep Learning Approach for Precision Diagnostics. \textit{IJARESM}. CNN model, 99.57\% accuracy (Kaggle), 98.67\% (LISC).}
 \end{itemize}
 
 % ============================================================
-%     HONORS AND AWARDS (optional)
+%     HONORS AND AWARDS
 % ============================================================
 
 \section{Honors and Awards}
 \vspace{1pt}
 \begin{itemize}
-\item{\textbf{[Award Name]} -- [Event/Organization] ([Year]).}
+\item{\textbf{Grand Finale Winner} (team lead) -- CODE-FOR-INDIA 48-Hour Hackathon (2023).}
+\item{\textbf{First Place} -- Shark Tank 2.0 Business Idea Competition.}
+\item{\textbf{Co-Student Convenor} -- MGIT Coding Club; organized the ``Tech Expo'' event (300+ participants).}
 \end{itemize}
 
 % ============================================================

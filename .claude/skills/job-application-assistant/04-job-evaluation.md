@@ -60,9 +60,9 @@ How well do the required/preferred skills align with the candidate's capabilitie
 | 40-59 | Partial match, significant upskilling needed |
 | 0-39 | Fundamental mismatch |
 
-**Strong match areas:** [YOUR_PRIMARY_SKILLS]
-**Moderate match areas:** [YOUR_SECONDARY_SKILLS]
-**Weak match areas:** [SKILLS_YOU_LACK]
+**Strong match areas:** Python, LangGraph / LangChain, multi-agent LLM orchestration, RAG, FastAPI, GPT-4o / Gemini APIs, document AI & structured extraction (PyMuPDF, Camelot, vision LLMs), AWS Bedrock (Guardrails, Prompt Manager), Langfuse observability
+**Moderate match areas:** PyTorch / deep learning (CNNs, regression), Kubernetes deployment, AWS generally, SQL, Linux, Next.js / Supabase full-stack, team leadership (4 engineers, ~1 year)
+**Weak match areas:** LLM fine-tuning / training at scale (no evidence), classical MLOps platforms (MLflow, Kubeflow, SageMaker pipelines), Azure / GCP, Java / Go / Scala, Spark / big-data engineering, formal people-management (hiring, performance reviews), 5+ years of experience requirements
 
 ### 2. Experience Match (0-100)
 Does work history align with what they're looking for? Match on the function and nature of the work performed, not the literal job title - a "Data Consultant" and a "Data Scientist" role can be functionally identical.
@@ -74,9 +74,9 @@ Does work history align with what they're looking for? Match on the function and
 | 40-59 | Adjacent experience, would need to make the case |
 | 0-39 | Unrelated experience |
 
-**Strong:** [YOUR_DIRECT_EXPERIENCE_DOMAINS]
-**Moderate:** [YOUR_ADJACENT_EXPERIENCE]
-**Entry-level:** [ROLES_WITH_LIMITED_EXPERIENCE]
+**Strong:** AI / LLM / GenAI Engineer, Agentic AI Engineer, document-AI / intelligent document processing, insurance-tech AI (~1 year production + ~1 year freelance)
+**Moderate:** AI Tech Lead / Team Lead (leads 4 engineers since Mar 2026 - credible for small-team lead roles), ML Engineer, applied AI research, full-stack AI product work
+**Entry-level:** Senior / Staff roles demanding 5+ years, Engineering Manager, MLOps / platform engineering, Data Engineering
 
 ### 3. Behavioral/Culture Fit (0-100)
 Does the role and company culture match the behavioral profile?
@@ -91,10 +91,15 @@ Does the role and company culture match the behavioral profile?
 **Red flags to research:** Department disorganization, work dominated by maintenance over development, poor chemistry with leadership, culture mismatches. Check reviews, media coverage, LinkedIn connections, and network contacts for insider perspective.
 
 ### 4. Location & Logistics (Pass/Fail + Notes)
-- Within commute range: PASS
-- Remote with occasional office: PASS
-- Requires relocation: FAIL (deal-breaker)
+Candidate is based in Bangalore. Preference order: **remote > hybrid > on-site**.
+- Fully remote (India or global-remote open to India): PASS - most preferred
+- Hybrid in Bangalore: PASS
+- On-site in Bangalore: PASS (lowest preference - note it)
+- Hybrid/on-site outside Bangalore (requires relocation): FLAG (discuss with user, not auto-fail)
+- Global "remote" that is restricted to other countries/time zones only: FAIL
 - Frequent international travel: FLAG (discuss with user)
+
+**Compensation floor:** 20 LPA minimum. A posting with a stated range whose top end is below 20 LPA → FLAG as likely deal-breaker; unstated salary → proceed.
 
 ### 5. Career Alignment & Motivation (0-100)
 Does this role advance career goals and contain tasks that energize?
@@ -107,19 +112,19 @@ Does this role advance career goals and contain tasks that energize?
 | 0-39 | Dead end or backwards step |
 
 **Career goals:**
-- [YOUR_CAREER_GOAL_1]
-- [YOUR_CAREER_GOAL_2]
-- [YOUR_CAREER_GOAL_3]
+- Senior hands-on AI / LLM engineering roles (agentic systems, GenAI products, document AI)
+- Grow into AI Tech Lead / technical leadership
+- Remote-first work at 20 LPA or above
 
 **Motivation filter:** Evaluate not just whether you *can* do the tasks, but whether the tasks will *energize* you. Consider:
-- Tasks that energize: [YOUR_ENERGIZING_TASKS]
-- Tasks that drain: [YOUR_DRAINING_TASKS]
+- Tasks that energize: candidate is open to a broad range of AI work - building and shipping LLM/agentic systems is the demonstrated core
+- Tasks that drain: none stated - ask the user if a role is mostly non-AI maintenance, support, or pure web development
 - Non-task factors: leadership style, department culture, company values, degree of autonomy
 
 **Life situation alignment:** Consider personal constraints:
-- **Security**: [YOUR_FINANCIAL_SITUATION_CONTEXT]
-- **Flexibility**: [YOUR_SCHEDULE_CONSTRAINTS]
-- **Professional development**: [YOUR_GROWTH_PRIORITIES]
+- **Security**: currently employed - can be selective; minimum 20 LPA
+- **Flexibility**: strong preference for remote; also does part-time freelance work
+- **Professional development**: growth toward AI technical leadership
 
 ### 6. Salary Benchmark (Optional)
 

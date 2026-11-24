@@ -39,6 +39,58 @@ Keep answers to 1-2 minutes. Be specific. End with what you learned or would do 
 
 <!-- Add more STAR examples as needed. Aim for 4-6 covering different competencies. -->
 
+## STAR Candidates (Complete Manually)
+
+### Leading three production document-AI services for Exdion
+**Source:** CV / LinkedIn - KrtrimaIQ (client Exdion)
+**What happened:** Led a team of 4 engineers delivering LOB classification, ACORD form extraction and auto symbols extraction to stable, monitored production.
+**Why it matters:** "Tell me about leading a team", "How do you handle delivery pressure / production incidents?", "How do you work with clients?"
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### Building the LOB classification service single-handedly
+**Source:** CV / LinkedIn - KrtrimaIQ (client Exdion)
+**What happened:** Designed and shipped a multi-stage LOB classifier end to end using PageIndex-based retrieval and regex pattern matching.
+**Why it matters:** "Walk me through a system you designed", "Tell me about a technical trade-off" (why retrieval + regex rather than a pure LLM call?)
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### SmartHire multi-agent architecture with guardrails
+**Source:** CV - KrtrimaIQ (SmartHire)
+**What happened:** Architected a 6-agent LangGraph hiring platform with Bedrock Guardrails, Prompt Manager and Langfuse tracing.
+**Why it matters:** "How do you make LLM systems safe/reliable?", "How do you debug agent pipelines?", "Design a multi-agent system"
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### Winning the CODE-FOR-INDIA 48-hour hackathon
+**Source:** CV / LinkedIn - Achievements
+**What happened:** Led a team that won the Grand Finale of the CODE-FOR-INDIA hackathon (2023).
+**Why it matters:** "Tell me about working under tight deadlines", "Tell me about leading a team to a goal"
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
+### WBC subtype classification paper
+**Source:** CV / LinkedIn - Publications
+**What happened:** Trained a CNN for white blood cell subtype classification (99.57% Kaggle, 98.67% LISC), published in IJARESM (2025).
+**Why it matters:** "Tell me about a deep-learning project", "How do you validate a model / avoid overfitting?", "Research experience?"
+**S/T/A/R stub:**
+- Situation:
+- Task:
+- Action:
+- Result:
+
 ## Common Tough Questions
 
 ### "Why did you leave [previous company]?"

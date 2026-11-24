@@ -20,8 +20,8 @@ framework_version: 1.0.0
 | [DRIVE_4] | [LEVEL] | [DESCRIPTION] |
 
 ## Strongest Behaviors
-- **[BEHAVIOR_1]:** [DESCRIPTION]
-- **[BEHAVIOR_2]:** [DESCRIPTION]
+- **End-to-end ownership:** Single-handedly designed and shipped the LOB classification service and drove most of the ACORD/auto-symbols extraction work; was given the Team Lead role on the Exdion account ~4 months after joining KrtrimaIQ. *[Inferred from CV/LinkedIn - review before relying on this]*
+- **Leadership and community-building:** Led the winning team at the CODE-FOR-INDIA hackathon, served as Co-Student Convenor of the MGIT Coding Club, organized a 300+ participant Tech Expo, and now leads a team of 4 engineers. *[Inferred from CV/LinkedIn - review before relying on this]*
 - **[BEHAVIOR_3]:** [DESCRIPTION]
 
 ## How You Work Best

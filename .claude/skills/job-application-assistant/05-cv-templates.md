@@ -59,7 +59,7 @@ Expected output: `Output written on main_<company>_<role>.pdf (2 pages, ...)`. A
     linkcolor=blue,
     filecolor=magenta,
     urlcolor=blue,
-    pdftitle={[YOUR_NAME] - CV},
+    pdftitle={Harshavardhan Sunnam - CV},
     % Keep pdfpagemode=UseNone: this block runs after moderncv's own
     % \AtEndPreamble (moderncv.cls sets pdfpagemode there), so a FullScreen
     % value here would win and open every CV in fullscreen presentation mode.
@@ -69,13 +69,13 @@ Expected output: `Output written on main_<company>_<role>.pdf (2 pages, ...)`. A
 \usepackage{import}
 
 % Personal data
-\name{[FIRST_NAME]}{[LAST_NAME]}
+\name{Harshavardhan}{Sunnam}
 % If you have no address to list, DELETE this whole line. \address{}{}{} fails
 % with "There's no line here to end" on every moderncv version.
-\address{[YOUR_ADDRESS]}{}{}
-\phone[mobile]{[YOUR_PHONE]}
-\email{[YOUR_EMAIL]}
-\extrainfo{\href{[YOUR_LINKEDIN_URL]}{LinkedIn}, \href{[YOUR_GITHUB_URL]}{GitHub}}
+\address{Bangalore, Karnataka, India}{}{}
+\phone[mobile]{+91 9392778046}
+\email{harshachinnu129@gmail.com}
+\extrainfo{\href{https://linkedin.com/in/harsha-vardhan12}{linkedin.com/in/harsha-vardhan12}, \href{https://github.com/harsha-chichu}{github.com/harsha-chichu}}
 
 \begin{document}
 \makecvtitle
@@ -137,11 +137,11 @@ When the role sits outside your home domain, **lead with the domain-transfer arg
 **Create 2-3 profile statement templates for your main role types:**
 
 <!-- SETUP: These are populated based on your background -->
-**For [YOUR_PRIMARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_1]
+**For AI / LLM Engineer roles (production GenAI, document AI):**
+> AI Engineer and Team Lead shipping production LLM systems. At KrtrimaIQ I lead a team of 4 engineers delivering three document-AI services for an insurance client: LOB classification, ACORD form extraction, and auto symbols extraction, built on GPT-4o, Gemini Vision, PyMuPDF and Camelot and deployed as microservices on Kubernetes. I designed and shipped the LOB classifier end to end and own architecture and production stability across all three. B.Tech in Computer Science with a published deep-learning paper on medical image classification.
 
-**For [YOUR_SECONDARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_2]
+**For Agentic AI / GenAI Engineer roles (multi-agent, LangGraph):**
+> AI Engineer specializing in multi-agent LLM systems. Architected SmartHire, a LangGraph platform orchestrating 6 specialized agents across the hiring pipeline, with AWS Bedrock Guardrails, Bedrock Prompt Manager and Langfuse tracing for safe, observable production operation. Built Preppy, a voice-first interview-prep app where LangGraph agents adapt follow-ups and target weak areas. Currently Team Lead for three production document-AI services, combining hands-on Python/FastAPI engineering with delivery ownership.
 
 Statements labeled *[Used for: <company>_<role>]* were extracted from archived application drafts by `/setup` Path A. They are **phrasing references, never fact sources**: when drafting from one, every factual claim still comes from `01-candidate-profile.md` - a past tailored draft does not vouch for its own accuracy.
 

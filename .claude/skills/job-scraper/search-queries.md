@@ -1,6 +1,6 @@
 # Search Queries for Job Scraper
 
-<!-- SETUP: Customize these queries based on your skills, target roles, and location -->
+<!-- Populated by /setup on 2026-11-24 for Harshavardhan Sunnam -->
 
 ## Installed portal CLIs (primary for `/scrape`)
 
@@ -12,108 +12,124 @@ The `site:` query templates in this file are the **WebSearch fallback** — for 
 
 ## Search Sites
 
-Primary (your market's job boards - scaffold one with `/add-portal`):
-- **[YOUR_JOB_BOARD]** - your market's largest general job board
-- **linkedin.com/jobs** - LinkedIn job listings (filter: [YOUR_COUNTRY] / [YOUR_CITY]); also covered by the community `linkedin-search` CLI once installed
-- **[YOUR_INDUSTRY_JOB_BOARD]** - a niche/industry board for your field (optional)
-- **[YOUR_ADDITIONAL_JOB_BOARD]** - another major board for your market (optional)
+Primary (Indian + remote AI job boards):
+- **linkedin.com/jobs** - filter: Remote (India) first, then Bangalore hybrid/on-site; also covered by the community `linkedin-search` CLI once installed
+- **naukri.com** - India's largest general job board
+- **wellfound.com** - startups, many remote AI roles
+- **instahyre.com** - curated tech roles, India
+- **cutshort.io** / **hirist.tech** - tech-focused Indian boards (optional)
 
-Secondary (company career pages via Google):
+Secondary (remote-first boards and company career pages via Google):
+- **remoteok.com**, **weworkremotely.com**, **remotive.com** - global remote (check India eligibility)
 - Direct Google searches with `site:` filters for known target companies
 
 ## Query Categories
 
-Queries are grouped by priority. Write **each category in every language from your Languages table** (see Language scope above). Combine each query with your location terms (e.g. your city, region, or metro area) where the site supports it.
+Queries are grouped by priority. Only English is declared, so all queries are in English. Remote is the top filter: prefer remote queries first, then Bangalore.
 
 Each priority has two kinds of block. **Plain terms** blocks are what the portal CLIs consume: one term per line, one CLI call per term, no `OR`, no `site:` prefix, and no location (the CLI's location flag, or the city in `--query` where that portal's SKILL.md says so, carries it). Quote a multi-word phrase only if the portal's `Query syntax:` line says quoting is honoured. **WebSearch-only** blocks are Google syntax (`site:`, quotes, `OR`) for the fallback path and are never passed to a CLI.
 
-**Organize by function, not job title.** The same underlying work carries different titles across companies and markets (a "Data Scientist" role at one employer may be posted as "Insights Analyst" or "Data Consultant" at another). Name each priority category after the function it covers, and list several plausible job titles as query variants within that category rather than betting an entire priority tier on one exact title string.
+**Organize by function, not job title.** The same underlying work carries different titles across companies and markets. Each priority category is named after the function it covers.
 
-### Priority 1: [YOUR_PRIMARY_ROLE_TYPE]
+### Priority 1: Building production LLM / agentic AI systems
 
-These match your strongest and most desired career direction.
+Strongest and most desired direction.
 
 #### Plain terms (portal CLIs)
 
 ```
-[YOUR_PRIMARY_JOB_TITLE_1]
-[YOUR_PRIMARY_JOB_TITLE_2]
-[YOUR_KEY_SKILL]
+AI Engineer
+GenAI Engineer
+LLM Engineer
+Agentic AI Engineer
+Generative AI Developer
+LangGraph
 ```
 
 #### WebSearch-only (`site:` fallback)
 
 ```
-site:[YOUR_JOB_BOARD] "[YOUR_PRIMARY_JOB_TITLE_1]" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_PRIMARY_JOB_TITLE_2]" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_KEY_SKILL]" [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_PRIMARY_JOB_TITLE_1]" [YOUR_COUNTRY]
+site:linkedin.com/jobs "AI Engineer" remote India
+site:linkedin.com/jobs "GenAI Engineer" OR "Generative AI Engineer" remote India
+site:naukri.com "LLM Engineer" OR "GenAI Engineer" remote
+site:wellfound.com "AI Engineer" remote India
+site:instahyre.com "Generative AI" Bangalore
+site:linkedin.com/jobs "Agentic AI" OR "LangGraph" Bangalore
 ```
 
-### Priority 2: [YOUR_DOMAIN_EXPERTISE]
+### Priority 2: AI technical leadership
 
-These match your domain expertise.
+Leading small AI engineering teams while staying hands-on.
 
 #### Plain terms (portal CLIs)
 
 ```
-[YOUR_DOMAIN_KEYWORD_1]
-[YOUR_DOMAIN_KEYWORD_2]
+AI Tech Lead
+AI Team Lead
+Lead AI Engineer
+Lead GenAI Engineer
 ```
 
 #### WebSearch-only (`site:` fallback)
 
 ```
-site:[YOUR_JOB_BOARD] [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] OR [YOUR_REGION]
-site:[YOUR_JOB_BOARD] [YOUR_DOMAIN_KEYWORD_2] [YOUR_COUNTRY]
-site:linkedin.com/jobs [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] [YOUR_COUNTRY]
+site:linkedin.com/jobs "AI Tech Lead" OR "Lead AI Engineer" remote India
+site:naukri.com "Tech Lead" "Generative AI" Bangalore
+site:wellfound.com "Lead AI Engineer" remote
 ```
 
-### Priority 3: [YOUR_ADJACENT_ROLE_TYPE]
+### Priority 3: Document AI / applied ML (domain expertise)
 
-Adjacent roles you could pivot into.
+Intelligent document processing, insurance-tech AI, applied ML.
 
 #### Plain terms (portal CLIs)
 
 ```
-[YOUR_ADJACENT_TITLE_1]
-[YOUR_ADJACENT_TITLE_2]
+Document AI
+Intelligent Document Processing
+Machine Learning Engineer
+Applied AI Engineer
 ```
 
 #### WebSearch-only (`site:` fallback)
 
 ```
-site:[YOUR_JOB_BOARD] "[YOUR_ADJACENT_TITLE_1]" [YOUR_KEY_SKILL] [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_ADJACENT_TITLE_2]" [YOUR_KEY_SKILL] [YOUR_CITY]
+site:linkedin.com/jobs "intelligent document processing" OR "document AI" engineer India
+site:naukri.com "Machine Learning Engineer" LLM Bangalore
+site:linkedin.com/jobs "insurtech" "AI Engineer" India
 ```
 
-### Priority 4: Broader Technical / Consulting
+### Priority 4: Broader AI / adjacent roles
 
-Wider net for general technical roles.
+Wider net: solutions and forward-deployed roles that use the same skills, plus Python backend with AI.
 
 #### Plain terms (portal CLIs)
 
 ```
-[YOUR_KEY_SKILL] developer
-technical consultant
+AI Solutions Engineer
+Forward Deployed Engineer
+Python AI Developer
+RAG
 ```
 
 #### WebSearch-only (`site:` fallback)
 
 ```
-site:[YOUR_JOB_BOARD] [YOUR_KEY_SKILL] developer [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_KEY_SKILL] developer" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "technical consultant" [YOUR_DOMAIN] [YOUR_CITY]
+site:linkedin.com/jobs "Forward Deployed Engineer" OR "AI Solutions Engineer" India remote
+site:naukri.com "Python" "LangChain" developer Bangalore
+site:remoteok.com "AI Engineer"
 ```
 
 ## Location Filter
 
-When evaluating results, verify the job location is within reasonable commute distance from your home. Define acceptable areas:
-- [YOUR_CITY] and surrounding areas
-- [ACCEPTABLE_AREA_1]
-- [ACCEPTABLE_AREA_2]
-- [BORDERLINE_AREA] (borderline - ~X min by transit)
-- [TOO_FAR_AREA] (too far)
+Candidate lives in Bangalore. Preference order: **remote > hybrid > on-site**.
+- **Ideal:** fully remote (India, or global-remote that hires from India)
+- **Acceptable:** hybrid in Bangalore
+- **Borderline:** on-site in Bangalore (acceptable but lowest preference)
+- **Flag for discussion:** hybrid/on-site in other Indian cities (Hyderabad, Pune, Chennai, NCR) - requires relocation
+- **Too far / exclude:** "remote" roles restricted to US/EU residents only; on-site abroad without sponsorship
+
+**Salary floor:** 20 LPA minimum - flag postings whose stated range tops out below this.
 
 ## Language Filter
 

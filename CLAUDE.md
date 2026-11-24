@@ -1,10 +1,7 @@
-# Job Application Assistant for [YOUR_NAME]
-
-<!-- SETUP: This file is populated by running /setup -->
-<!-- After running /setup, all [PLACEHOLDER] tokens will be replaced with your actual information -->
+# Job Application Assistant for Harshavardhan Sunnam
 
 ## Role
-This repo is a job application workspace. Claude acts as a career advisor and application assistant for [YOUR_NAME], helping with:
+This repo is a job application workspace. Claude acts as a career advisor and application assistant for Harshavardhan Sunnam, helping with:
 1. **Job fit evaluation** - Assess job postings against your profile (skills, experience, behavioral traits)
 2. **CV tailoring** - Adapt existing CV templates (LaTeX/moderncv) to target specific roles
 3. **Cover letter writing** - Draft targeted cover letters using existing templates (LaTeX)
@@ -13,79 +10,80 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 
 ## Candidate Profile
 
-<!-- This section is auto-populated by /setup. You can also fill it in manually. -->
+Full detail lives in `.claude/skills/job-application-assistant/01-candidate-profile.md`.
 
 ### Identity
-- **Name:** [YOUR_NAME]
-- **Location:** [YOUR_CITY], [YOUR_COUNTRY] ([YOUR_COMMUTE_CONSTRAINTS])
+- **Name:** Harshavardhan Sunnam
+- **Location:** Bangalore, Karnataka, India (work-mode preference: remote first, then hybrid, then on-site)
+- **Contact:** +91 9392778046 · harshachinnu129@gmail.com · linkedin.com/in/harsha-vardhan12 · github.com/harsha-chichu
 - **Languages:**
   | Language | Level |
   |----------|-------|
-  | [LANGUAGE] | [LEVEL] |
-  <!-- Every language you work in professionally, with your level (CEFR, "native," "professional
-  working proficiency," whatever your CV/LinkedIn use - no need to force it into one scale). An
-  undeclared language is a hard deal-breaker if a posting requires it; a declared language at a
-  lower level than a posting wants is flagged for your own judgment, not auto-rejected. See
+  | English | Fluent (professional working proficiency) |
+  <!-- An undeclared language is a hard deal-breaker if a posting requires it; a declared
+  language at a lower level than a posting wants is flagged for your own judgment. See
   04-job-evaluation.md's Language Gate. -->
-- **CV language:** [YOUR_CV_LANGUAGE] <!-- English unless your market expects otherwise; /setup asks -->
+- **CV language:** English
 
-- **Status:** [YOUR_EMPLOYMENT_STATUS]
-- **LinkedIn headline:** "[YOUR_LINKEDIN_HEADLINE]"
+- **Status:** Employed - AI Engineer / Team Lead at KrtrimaIQ (deployed to client Exdion; Team Lead on the Exdion account since Mar 2026); part-time freelance AI/ML work
+- **LinkedIn headline:** "AI Engineer @krtrimaIQ | Team Lead @Exdion | Published DL Paper on WBC Classification | Full Stack & Security Intern | CodeForIndia Hackathon Winner"
 
 ### Education
-<!-- List your degrees, most recent first -->
-- **[DEGREE_LEVEL] in [FIELD]** ([YEAR_START]-[YEAR_END]) - [INSTITUTION]
-  - Thesis: "[THESIS_TITLE]"
-  - Topics: [KEY_TOPICS]
+- **B.Tech in Computer Science** (2020-2024) - Mahatma Gandhi Institute of Technology, Hyderabad
 
 ### Professional Experience
-<!-- List your roles, most recent first -->
-- **[JOB_TITLE]** ([START_DATE] - [END_DATE]) - **[COMPANY]** ([LOCATION])
-  - [KEY_RESPONSIBILITY_1]
-  - [KEY_RESPONSIBILITY_2]
-  - [KEY_ACHIEVEMENT]
+- **AI Engineer, Team Lead (Client: Exdion)** (Nov 2025 - Present) - **KrtrimaIQ** (Bangalore)
+  - Leads 4 engineers delivering three production document-AI services: LOB classification, ACORD insurance form extraction, auto symbols extraction (GPT-4o, Gemini Vision, PyMuPDF, Camelot, Kubernetes)
+  - Single-handedly built the LOB classification service (PageIndex retrieval + regex)
+  - Architected SmartHire: 6-agent LangGraph hiring platform with AWS Bedrock Guardrails, Prompt Manager and Langfuse tracing
+- **Freelance AI/ML Engineer** (Dec 2024 - Present, part-time) - **Private Client** (Hyderabad)
+  - Artist booking platform (Next.js, Tailwind, Supabase, 80+ bookings); GenAI RAG chatbot (LangChain, vector DB)
+- **Research Intern - Nanoindentation Analysis Using AI/ML** (Mar 2023 - Nov 2023) - **Academic Collaboration** (Hyderabad)
+  - ML on 80,000+ nanoindentation samples, PyTorch pipelines, >85% R²
+- **Short 2023 internships** (profile only): Edunet Foundation (AI/ML), PHN Technology (Web Dev), Supraja Technologies (Cyber Security), YBI Foundation (ML)
+
+### Independent Projects
+- **Preppy** - voice-first AI interview-prep platform (Next.js, Supabase, LangGraph, Langfuse, FastAPI)
 
 ### Technical Skills
-- **Primary:** [YOUR_PRIMARY_SKILLS]
-- **Secondary:** [YOUR_SECONDARY_SKILLS]
-- **Domain:** [YOUR_DOMAIN_EXPERTISE]
-- **Software:** [YOUR_TOOLS_AND_SOFTWARE]
+- **Primary:** Python, LangGraph, LangChain, multi-agent LLM systems, RAG, FastAPI, GPT-4o / Gemini, AWS Bedrock (Guardrails, Prompt Manager), Langfuse
+- **Secondary:** PyTorch, CNNs, Kubernetes, AWS, SQL, Linux, DeepAgents, PyMuPDF, Camelot, Next.js, TailwindCSS, Supabase
+- **Domain:** Agentic AI, document AI / insurance (ACORD, LOB), LLM observability & guardrails, HR-tech automation, applied ML for scientific and medical data
+- **Software:** AWS, Kubernetes, Git, Langfuse, Supabase
 
 ### Certifications
-<!-- List relevant certifications with dates -->
-- **[CERTIFICATION_NAME]** - [HOURS]h - completed [DATE]
+- **CLA - C Programming Language Certificate**
+- **Complete Data Science, Machine Learning, DL, NLP Bootcamp**
+- **Responsive Web Design**
+- **Namma Yatri Open Mobility Challenge** - certificate of participation
 
 ### Publications
-<!-- List peer-reviewed publications, if any -->
-- [AUTHOR_LIST] ([YEAR]). [TITLE]. [JOURNAL].
+- Sunnam, H. et al. (2025). Automated White Blood Cell Subtype Classification: A Robust Deep Learning Approach for Precision Diagnostics. IJARESM.
 
 ### Awards
-<!-- List relevant awards, hackathons, competitions -->
-- [AWARD_NAME] - [EVENT] ([YEAR])
+- Grand Finale winner (team lead) - CODE-FOR-INDIA 48-Hour Hackathon (2023)
+- First place - Shark Tank 2.0 Business Idea Competition
+- Co-Student Convenor - MGIT Coding Club; organized "Tech Expo" (300+ participants)
 
 ### Behavioral Profile
-<!-- Your behavioral assessment results (PI, DISC, Myers-Briggs, or self-assessment) -->
-- **[TRAIT_1]** - [DESCRIPTION]
-- **[TRAIT_2]** - [DESCRIPTION]
-- **Strengths:** [YOUR_STRENGTHS]
-- **Growth areas:** [YOUR_GROWTH_AREAS]
-- **Thrives in:** [YOUR_IDEAL_ENVIRONMENT]
+- **End-to-end ownership** - builds and ships services alone when needed; promoted to Team Lead ~4 months after joining *[inferred, review]*
+- **Leadership & community-building** - hackathon team lead, coding club convenor, event organizer, now leads 4 engineers *[inferred, review]*
+- **Strengths:** shipping production LLM systems, multi-agent architecture, delivery ownership
+- **Growth areas:** [not yet assessed]
+- **Thrives in:** remote-friendly teams building AI products; open to a wide range of AI work
 
 ### What Excites You
-<!-- What motivates you professionally -->
-- [PASSION_1]
-- [PASSION_2]
+- Building AI systems - open to a broad range of AI work (agentic systems, document AI, GenAI products, ML)
+- Growing into AI technical leadership
 
 ### Target Sectors
-<!-- Industries and companies you're targeting -->
-- [SECTOR_1]: [EXAMPLE_COMPANIES]
-- [SECTOR_2]: [EXAMPLE_COMPANIES]
+- AI-first product companies and startups (India and global remote)
+- Enterprise AI / GenAI teams in insurtech, fintech, HR-tech, SaaS
+- AI services/consulting firms (acceptable - no stated preference between product and services)
 
 ### Deal-breakers
-<!-- Hard constraints on job search. Language requirements are handled separately and
-automatically from your Languages table above - don't duplicate them here. -->
-- [DEALBREAKER_1]
-- [DEALBREAKER_2]
+- Compensation below **20 LPA** (minimum)
+- Work mode preference order: **remote > hybrid > on-site** (on-site is acceptable, ranked last; on-site outside Bangalore = flag for discussion)
 
 ## Repo Structure
 - `cv/` - LaTeX CV variants (moderncv template, banking style)
